@@ -1,5 +1,7 @@
 package org.example.mapstruct;
 
+import org.example.immutable.value.CarValue;
+import org.example.mapstruct.pojo.Car;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -11,7 +13,7 @@ public class ToImmutableMapperTest {
     public void carToImmutable() {
         final Car car = new Car("Morris", 5);
 
-        final ImmutableCarValue carValue = ToImmutableMapper.INSTANCE.to(car);
+        final CarValue carValue = ToImmutableMapper.INSTANCE.to(car);
 
         assertNotNull(carValue);
         assertEquals("Morris", carValue.make());

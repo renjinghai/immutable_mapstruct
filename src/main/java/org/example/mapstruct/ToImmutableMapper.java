@@ -1,5 +1,7 @@
 package org.example.mapstruct;
 
+import org.example.immutable.value.CarValue;
+import org.example.mapstruct.pojo.Car;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
@@ -8,5 +10,5 @@ public interface ToImmutableMapper {
 
     ToImmutableMapper INSTANCE = Mappers.getMapper(ToImmutableMapper.class);
 
-    ImmutableCarValue to(Car car);
+    CarValue to(Car car);
 }

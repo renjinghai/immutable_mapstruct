@@ -1,4 +1,4 @@
-package org.example.mapstruct;
+package org.example.mapstruct.pojo;
 
 public class CarDto {
 

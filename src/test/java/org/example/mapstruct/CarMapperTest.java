@@ -1,5 +1,7 @@
 package org.example.mapstruct;
 
+import org.example.mapstruct.pojo.Car;
+import org.example.mapstruct.pojo.CarDto;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
