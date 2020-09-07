@@ -4,8 +4,8 @@ import com.google.common.collect.ImmutableList;
 import org.example.immutable.value.CarValue;
 import org.example.immutable.value.ImmutableCarValue;
 import org.example.immutable.value.ImmutableWheelValue;
-import org.example.mapstruct.pojo.Car;
-import org.example.mapstruct.pojo.Wheel;
+import org.example.pojo.Car;
+import org.example.pojo.Wheel;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

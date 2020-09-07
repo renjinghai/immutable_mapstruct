@@ -1,4 +1,4 @@
-package org.example.mapstruct.pojo;
+package org.example.pojo;
 
 import java.util.List;
 

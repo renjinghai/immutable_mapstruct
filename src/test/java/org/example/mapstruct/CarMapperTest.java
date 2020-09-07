@@ -1,10 +1,10 @@
 package org.example.mapstruct;
 
 import com.google.common.collect.ImmutableList;
-import org.example.mapstruct.pojo.Car;
-import org.example.mapstruct.pojo.CarDto;
-import org.example.mapstruct.pojo.Wheel;
-import org.example.mapstruct.pojo.WheelDto;
+import org.example.pojo.Car;
+import org.example.pojo.CarDto;
+import org.example.pojo.Wheel;
+import org.example.pojo.WheelDto;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

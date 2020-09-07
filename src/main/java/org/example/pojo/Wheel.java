@@ -1,4 +1,4 @@
-package org.example.mapstruct.pojo;
+package org.example.pojo;
 
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;

@@ -1,7 +1,7 @@
 package org.example.mapstruct;
 
-import org.example.mapstruct.pojo.Car;
-import org.example.mapstruct.pojo.CarDto;
+import org.example.pojo.Car;
+import org.example.pojo.CarDto;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
