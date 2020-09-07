@@ -2,13 +2,17 @@ package org.example.mapstruct;
 
 import org.example.immutable.value.CarValue;
 import org.example.mapstruct.pojo.Car;
+import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 @Mapper
-public interface ToImmutableMapper {
+public interface ImmutableMapper {
 
-    ToImmutableMapper INSTANCE = Mappers.getMapper(ToImmutableMapper.class);
+    ImmutableMapper INSTANCE = Mappers.getMapper(ImmutableMapper.class);
 
     CarValue to(Car car);
+
+    @InheritInverseConfiguration
+    Car to(CarValue car);
 }
