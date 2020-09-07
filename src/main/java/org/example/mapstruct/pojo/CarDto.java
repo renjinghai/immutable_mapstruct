@@ -8,6 +8,11 @@ public class CarDto {
     public CarDto() {
     }
 
+    public CarDto(String make, int seatCount) {
+        this.make = make;
+        this.seatCount = seatCount;
+    }
+
     public String getMake() {
         return make;
     }
