@@ -12,13 +12,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
-public class ImmutableMapperTest {
+public class CrossMapperTest {
 
     @Test
     public void testToImmutable() {
         final Car car = new Car("Morris", 5, ImmutableList.of(new Wheel(50)));
 
-        final CarValue carValue = ImmutableMapper.INSTANCE.to(car);
+        final CarValue carValue = CrossMapper.INSTANCE.to(car);
 
         assertNotNull(carValue);
         assertEquals("Morris", carValue.make());
@@ -35,7 +35,7 @@ public class ImmutableMapperTest {
                 .addWheels(ImmutableWheelValue.builder().size(50).build())
                 .build();
 
-        final Car car = ImmutableMapper.INSTANCE.to(carValue);
+        final Car car = CrossMapper.INSTANCE.to(carValue);
 
         assertNotNull(car);
         assertEquals("Morris", car.getMake());

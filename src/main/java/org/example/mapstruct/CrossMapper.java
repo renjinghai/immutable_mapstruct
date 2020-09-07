@@ -7,9 +7,9 @@ import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
 @Mapper
-public interface ImmutableMapper {
+public interface CrossMapper {
 
-    ImmutableMapper INSTANCE = Mappers.getMapper(ImmutableMapper.class);
+    CrossMapper INSTANCE = Mappers.getMapper(CrossMapper.class);
 
     CarValue to(Car car);
 
