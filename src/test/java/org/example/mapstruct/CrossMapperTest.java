@@ -6,7 +6,6 @@ import org.example.immutable.value.ImmutableCarValue;
 import org.example.immutable.value.ImmutableWheelValue;
 import org.example.pojo.Car;
 import org.example.pojo.Wheel;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -21,12 +20,11 @@ public class CrossMapperTest {
         final CarValue carValue = CrossMapper.INSTANCE.to(car);
 
         assertNotNull(carValue);
-        assertEquals("Morris", carValue.make());
-        assertEquals(5, carValue.numberOfSeats());
-        assertEquals(ImmutableList.of(ImmutableWheelValue.builder().size(50).build()), carValue.wheels());
+        assertEquals("Morris", carValue.getMake());
+        assertEquals(5, carValue.getNumberOfSeats());
+        assertEquals(ImmutableList.of(ImmutableWheelValue.builder().size(50).build()), carValue.getWheels());
     }
 
-    @Disabled
     @Test
     public void testFromImmutable() {
         final CarValue carValue = ImmutableCarValue.builder()

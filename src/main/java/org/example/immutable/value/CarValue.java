@@ -7,7 +7,7 @@ import java.util.List;
 @Value.Immutable
 public interface CarValue {
 
-    String make();
-    int numberOfSeats();
-    List<WheelValue> wheels();
+    String getMake();
+    int getNumberOfSeats();
+    List<WheelValue> getWheels();
 }
