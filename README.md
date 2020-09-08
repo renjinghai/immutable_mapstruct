@@ -1,4 +1,4 @@
 # immutable_mapstruct
 ```
-mvn test
+mvn clean test
 ```
